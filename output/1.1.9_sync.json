@@ -1,0 +1,94 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "0.520",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "स"
+      ]
+    },
+    {
+      "begin": "0.520",
+      "children": [],
+      "end": "1.300",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "नः"
+      ]
+    },
+    {
+      "begin": "1.300",
+      "children": [],
+      "end": "2.040",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "पितेव"
+      ]
+    },
+    {
+      "begin": "2.040",
+      "children": [],
+      "end": "3.540",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "सूनवेग्ने"
+      ]
+    },
+    {
+      "begin": "3.540",
+      "children": [],
+      "end": "7.720",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "सूपायनो"
+      ]
+    },
+    {
+      "begin": "7.720",
+      "children": [],
+      "end": "8.340",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "भव"
+      ]
+    },
+    {
+      "begin": "8.340",
+      "children": [],
+      "end": "9.860",
+      "id": "p000001s000007w000001",
+      "language": "hi",
+      "lines": [
+        "सचस्वा"
+      ]
+    },
+    {
+      "begin": "9.860",
+      "children": [],
+      "end": "11.140",
+      "id": "p000001s000008w000001",
+      "language": "hi",
+      "lines": [
+        "नः"
+      ]
+    },
+    {
+      "begin": "11.140",
+      "children": [],
+      "end": "13.000",
+      "id": "p000001s000009w000001",
+      "language": "hi",
+      "lines": [
+        "स्वस्तये"
+      ]
+    }
+  ]
+}
