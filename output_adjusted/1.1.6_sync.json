@@ -1,0 +1,130 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "0.978",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "यदंग"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.74,
+        "adjusted_duration": 0.9777777777777776
+      }
+    },
+    {
+      "begin": "0.978",
+      "children": [],
+      "end": "2.444",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "दाशुषे"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 2,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 1.9400000000000002,
+        "adjusted_duration": 1.4666666666666666
+      }
+    },
+    {
+      "begin": "2.444",
+      "children": [],
+      "end": "4.596",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "त्वमग्ने"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.7799999999999998,
+        "adjusted_duration": 2.1511111111111108
+      }
+    },
+    {
+      "begin": "4.596",
+      "children": [],
+      "end": "5.818",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "भद्रं"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 1.38,
+        "adjusted_duration": 1.222222222222222
+      }
+    },
+    {
+      "begin": "5.818",
+      "children": [],
+      "end": "8.164",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "करिष्यसि"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "5": 0
+        },
+        "bonus": 0.16,
+        "original_duration": 0.9800000000000004,
+        "adjusted_duration": 2.3466666666666667
+      }
+    },
+    {
+      "begin": "8.164",
+      "children": [],
+      "end": "12.760",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "तवेत्तत्सत्यमंगिरः"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 6,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 5.9399999999999995,
+        "adjusted_duration": 4.595555555555555
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "1.892",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "अग्निना"
+      ],
+      "lines_with_svaras": [
+        "अ॒ग्निना᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 4.1,
+        "adjusted_duration": 1.8920481927710844
+      }
+    },
+    {
+      "begin": "1.892",
+      "children": [],
+      "end": "6.161",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "रयिमश्नवत्पोषमेव"
+      ],
+      "lines_with_svaras": [
+        "र॒यिम᳚श्नव॒त्पोष᳚मे॒व"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 4,
+          "1": 3,
+          "2": 2,
+          "5": 0
+        },
+        "bonus": 0.16,
+        "original_duration": 3.8000000000000007,
+        "adjusted_duration": 4.269236947791164
+      }
+    },
+    {
+      "begin": "6.161",
+      "children": [],
+      "end": "8.296",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "दिवेदिवे"
+      ],
+      "lines_with_svaras": [
+        "दि॒वेदि᳚वे"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.379999999999999,
+        "adjusted_duration": 2.134618473895582
+      }
+    },
+    {
+      "begin": "8.296",
+      "children": [],
+      "end": "9.460",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "यशसं"
+      ],
+      "lines_with_svaras": [
+        "य॒शसं᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.4000000000000004,
+        "adjusted_duration": 1.1643373493975904
+      }
+    },
+    {
+      "begin": "9.460",
+      "children": [],
+      "end": "12.080",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "वीरवत्तमम्"
+      ],
+      "lines_with_svaras": [
+        "वी॒रव᳚त्तमम्"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 4,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.4000000000000004,
+        "adjusted_duration": 2.619759036144578
+      }
+    }
+  ]
+}

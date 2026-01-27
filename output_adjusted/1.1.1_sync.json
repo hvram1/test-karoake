@@ -1,0 +1,148 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "2.381",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "अग्निमीळे"
+      ],
+      "lines_with_svaras": [
+        "अ॒ग्निमी᳚ळे"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.96,
+        "adjusted_duration": 2.380985915492958
+      }
+    },
+    {
+      "begin": "2.381",
+      "children": [],
+      "end": "4.519",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "पुरोहितं"
+      ],
+      "lines_with_svaras": [
+        "पु॒रोहि᳚तं"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 3.24,
+        "adjusted_duration": 2.1380281690140843
+      }
+    },
+    {
+      "begin": "4.519",
+      "children": [],
+      "end": "6.414",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "यज्ञस्य"
+      ],
+      "lines_with_svaras": [
+        "य॒ज्ञस्य᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.12,
+        "adjusted_duration": 1.895070422535211
+      }
+    },
+    {
+      "begin": "6.414",
+      "children": [],
+      "end": "9.524",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "देवमृत्विजम्"
+      ],
+      "lines_with_svaras": [
+        "दे॒वमृ॒त्विज᳚म्"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 3,
+          "1": 2,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.66,
+        "adjusted_duration": 3.109859154929578
+      }
+    },
+    {
+      "begin": "9.524",
+      "children": [],
+      "end": "11.176",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "होतारं"
+      ],
+      "lines_with_svaras": [
+        "होता᳚रं"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.5599999999999987,
+        "adjusted_duration": 1.652112676056338
+      }
+    },
+    {
+      "begin": "11.176",
+      "children": [],
+      "end": "13.800",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "रत्नधातमम्"
+      ],
+      "lines_with_svaras": [
+        "रत्न॒धात᳚मम्"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 4,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.2600000000000016,
+        "adjusted_duration": 2.6239436619718313
+      }
+    }
+  ]
+}

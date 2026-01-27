@@ -1,0 +1,196 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "1.043",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "अग्ने"
+      ],
+      "lines_with_svaras": [
+        "अग्ने॒"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.68,
+        "adjusted_duration": 1.04296875
+      }
+    },
+    {
+      "begin": "1.043",
+      "children": [],
+      "end": "1.460",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "यं"
+      ],
+      "lines_with_svaras": [
+        "यं"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.62,
+        "adjusted_duration": 0.4171875
+      }
+    },
+    {
+      "begin": "1.460",
+      "children": [],
+      "end": "3.713",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "यज्ञमध्वरं"
+      ],
+      "lines_with_svaras": [
+        "य॒ज्ञम᳚ध्व॒रं"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 2,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.42,
+        "adjusted_duration": 2.2528125
+      }
+    },
+    {
+      "begin": "3.713",
+      "children": [],
+      "end": "5.340",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "विश्वतः"
+      ],
+      "lines_with_svaras": [
+        "वि॒श्वतः᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.2999999999999994,
+        "adjusted_duration": 1.62703125
+      }
+    },
+    {
+      "begin": "5.340",
+      "children": [],
+      "end": "7.176",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "परिभूरसि"
+      ],
+      "lines_with_svaras": [
+        "परि॒भूरसि᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 3,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.04,
+        "adjusted_duration": 1.8356249999999998
+      }
+    },
+    {
+      "begin": "7.176",
+      "children": [],
+      "end": "7.384",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "स"
+      ],
+      "lines_with_svaras": [
+        "स"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.5200000000000005,
+        "adjusted_duration": 0.20859375
+      }
+    },
+    {
+      "begin": "7.384",
+      "children": [],
+      "end": "9.428",
+      "id": "p000001s000007w000001",
+      "language": "hi",
+      "lines": [
+        "इद्देवेषु"
+      ],
+      "lines_with_svaras": [
+        "इद्दे॒वेषु᳚"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.5600000000000005,
+        "adjusted_duration": 2.0442187499999998
+      }
+    },
+    {
+      "begin": "9.428",
+      "children": [],
+      "end": "10.680",
+      "id": "p000001s000008w000001",
+      "language": "hi",
+      "lines": [
+        "गच्छति"
+      ],
+      "lines_with_svaras": [
+        "गच्छति"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 3,
+          "1": 0,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 1.5399999999999991,
+        "adjusted_duration": 1.2515625000000001
+      }
+    }
+  ]
+}

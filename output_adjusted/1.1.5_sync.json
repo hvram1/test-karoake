@@ -1,0 +1,130 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "2.456",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "अग्निर्होता"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 3.18,
+        "adjusted_duration": 2.455675675675676
+      }
+    },
+    {
+      "begin": "2.456",
+      "children": [],
+      "end": "4.495",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "कविक्रतुः"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.8999999999999999,
+        "adjusted_duration": 2.0394594594594597
+      }
+    },
+    {
+      "begin": "4.495",
+      "children": [],
+      "end": "8.824",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "सत्यश्चित्रश्रवस्तमः"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 5,
+          "1": 2,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 3.88,
+        "adjusted_duration": 4.328648648648649
+      }
+    },
+    {
+      "begin": "8.824",
+      "children": [],
+      "end": "9.656",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "देवो"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.45999999999999996,
+        "adjusted_duration": 0.8324324324324325
+      }
+    },
+    {
+      "begin": "9.656",
+      "children": [],
+      "end": "11.321",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "देवेभिरा"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 2,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 1.1799999999999997,
+        "adjusted_duration": 1.664864864864865
+      }
+    },
+    {
+      "begin": "11.321",
+      "children": [],
+      "end": "12.320",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "गमत्"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 2.7200000000000006,
+        "adjusted_duration": 0.998918918918919
+      }
+    }
+  ]
+}

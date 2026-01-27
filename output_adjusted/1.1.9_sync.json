@@ -1,0 +1,193 @@
+{
+  "fragments": [
+    {
+      "begin": "0.000",
+      "children": [],
+      "end": "0.266",
+      "id": "p000001s000001w000001",
+      "language": "hi",
+      "lines": [
+        "स"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 0.52,
+        "adjusted_duration": 0.26639344262295084
+      }
+    },
+    {
+      "begin": "0.266",
+      "children": [],
+      "end": "1.012",
+      "id": "p000001s000002w000001",
+      "language": "hi",
+      "lines": [
+        "नः"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.78,
+        "adjusted_duration": 0.7459016393442623
+      }
+    },
+    {
+      "begin": "1.012",
+      "children": [],
+      "end": "2.557",
+      "id": "p000001s000003w000001",
+      "language": "hi",
+      "lines": [
+        "पितेव"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.74,
+        "adjusted_duration": 1.5450819672131146
+      }
+    },
+    {
+      "begin": "2.557",
+      "children": [],
+      "end": "5.701",
+      "id": "p000001s000004w000001",
+      "language": "hi",
+      "lines": [
+        "सूनवेग्ने"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 1
+        },
+        "bonus": 0.28,
+        "original_duration": 1.5,
+        "adjusted_duration": 3.14344262295082
+      }
+    },
+    {
+      "begin": "5.701",
+      "children": [],
+      "end": "7.566",
+      "id": "p000001s000005w000001",
+      "language": "hi",
+      "lines": [
+        "सूपायनो"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 3,
+          "1": 1,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 4.18,
+        "adjusted_duration": 1.864754098360656
+      }
+    },
+    {
+      "begin": "7.566",
+      "children": [],
+      "end": "8.311",
+      "id": "p000001s000006w000001",
+      "language": "hi",
+      "lines": [
+        "भव"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 0.6200000000000001,
+        "adjusted_duration": 0.7459016393442623
+      }
+    },
+    {
+      "begin": "8.311",
+      "children": [],
+      "end": "10.123",
+      "id": "p000001s000007w000001",
+      "language": "hi",
+      "lines": [
+        "सचस्वा"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 2,
+          "1": 0,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.5199999999999996,
+        "adjusted_duration": 1.8114754098360657
+      }
+    },
+    {
+      "begin": "10.123",
+      "children": [],
+      "end": "10.656",
+      "id": "p000001s000008w000001",
+      "language": "hi",
+      "lines": [
+        "नः"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "5": 0
+        },
+        "bonus": 0.0,
+        "original_duration": 1.2800000000000011,
+        "adjusted_duration": 0.5327868852459017
+      }
+    },
+    {
+      "begin": "10.656",
+      "children": [],
+      "end": "13.000",
+      "id": "p000001s000009w000001",
+      "language": "hi",
+      "lines": [
+        "स्वस्तये"
+      ],
+      "svara_info": {
+        "counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "5": 0
+        },
+        "bonus": 0.08,
+        "original_duration": 1.8599999999999994,
+        "adjusted_duration": 2.3442622950819674
+      }
+    }
+  ]
+}
