@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeneas Sync Viewer - Krishna Yajurveda</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      color: #1a365d;
+      margin-bottom: 10px;
+    }
+    .controls {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .selector {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    .selector label {
+      font-weight: 500;
+      color: #444;
+    }
+    .selector select {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .audio-container {
+      margin-top: 15px;
+    }
+    audio {
+      width: 100%;
+    }
+    .info {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+    .phrases-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .phrase {
+      padding: 12px 15px;
+      margin: 8px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 2px solid transparent;
+      background: #f8f9fa;
+    }
+    .phrase:hover {
+      background: #e9ecef;
+    }
+    .phrase.active {
+      background: #fff3cd;
+      border-color: #ffc107;
+    }
+    .phrase.playing {
+      background: #d4edda;
+      border-color: #28a745;
+    }
+    .phrase-text {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .phrase-time {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+    .status {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .instructions {
+      background: #e7f3ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aeneas Sync Viewer</h1>
+  <p>Test phrase-level audio synchronization for Krishna Yajurveda</p>
+  
+  <div class="instructions">
+    <strong>Instructions:</strong> Select a Prasna, Anuvaka, and Panchasat to load the timing data. 
+    Click on any phrase to jump to that position. The current phrase will highlight as audio plays.
+  </div>
+
+  <div class="controls">
+    <div class="selector">
+      <div>
+        <label>Prasna:</label><br>
+        <select id="prasna">
+          <option value="1">Prasna 1</option>
+          <option value="2">Prasna 2</option>
+          <option value="3">Prasna 3</option>
+        </select>
+      </div>
+      <div>
+        <label>Anuvaka:</label><br>
+        <select id="anuvaka">
+          <!-- Populated dynamically -->
+        </select>
+      </div>
+      <div>
+        <label>Panchasat:</label><br>
+        <select id="panchasat">
+          <!-- Populated dynamically -->
+        </select>
+      </div>
+      <div>
+        <button id="loadBtn" style="margin-top: 18px; padding: 8px 20px; cursor: pointer;">Load</button>
+      </div>
+    </div>
+    
+    <div class="audio-container">
+      <audio id="audio" controls preload="auto"></audio>
+      <div class="info" id="info">Select a Panchasat and click Load</div>
+    </div>
+  </div>
+
+  <div class="phrases-container" id="phrases">
+    <div class="loading">Select a Panchasat to view phrases</div>
+  </div>
+
+  <div class="status" id="status" style="display: none;">
+    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+  </div>
+
+  <script>
+    // Configuration - update these paths as needed
+    const SYNC_DATA_PATH = '/test-karoake/yajurveda/final';
+    const AUDIO_PATH = '/test-karoake/yajurveda/output/audio_splits';
+    
+    let currentData = null;
+    let audioElement = document.getElementById('audio');
+    
+    // Populate Anuvaka dropdown
+    function populateAnuvakas() {
+      const select = document.getElementById('anuvaka');
+      select.innerHTML = '';
+      for (let i = 1; i <= 14; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = `Anuvaka ${i}`;
+        select.appendChild(opt);
+      }
+    }
+    
+    // Get available Panchasats for an Anuvaka (approximate based on data)
+    const panchasatCounts = {
+      '1': {1:1, 2:2, 3:1, 4:2, 5:2, 6:1, 7:2, 8:1, 9:3, 10:3, 11:2, 12:1, 13:3, 14:4},
+      '2': {1:2, 2:3, 3:3, 4:2, 5:2, 6:1, 7:1, 8:2, 9:1, 10:2, 11:2, 12:3, 13:3, 14:7},
+      '3': {1:2, 2:2, 3:1, 4:3, 5:1, 6:2, 7:2, 8:2, 9:2, 10:2, 11:1, 12:1, 13:2, 14:8}
+    };
+    
+    function populatePanchasats() {
+      const prasna = document.getElementById('prasna').value;
+      const anuvaka = document.getElementById('anuvaka').value;
+      const select = document.getElementById('panchasat');
+      select.innerHTML = '';
+      
+      const count = panchasatCounts[prasna]?.[anuvaka] || 1;
+      for (let i = 1; i <= count; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = `Panchasat ${i}`;
+        select.appendChild(opt);
+      }
+    }
+    
+    // Format time as M:SS
+    function formatTime(seconds) {
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m}:${s.toString().padStart(2, '0')}`;
+    }
+    
+    // Load sync data and audio
+    async function loadData() {
+      const prasna = document.getElementById('prasna').value;
+      const anuvaka = document.getElementById('anuvaka').value;
+      const panchasat = document.getElementById('panchasat').value;
+      
+      const syncFile = `${SYNC_DATA_PATH}/K01_P0${prasna}/K01_P0${prasna}_A${anuvaka.padStart(2,'0')}_PS${panchasat.padStart(2,'0')}.json`;
+      const audioFile = `${AUDIO_PATH}/K01_P0${prasna}/K01_P0${prasna}_A${anuvaka.padStart(2,'0')}.mp3`;
+      
+      document.getElementById('phrases').innerHTML = '<div class="loading">Loading...</div>';
+      document.getElementById('info').textContent = 'Loading...';
+      
+      try {
+        const response = await fetch(syncFile);
+        if (!response.ok) throw new Error(`Failed to load ${syncFile}`);
+        currentData = await response.json();
+        
+        // Set audio source
+        audioElement.src = audioFile;
+        
+        // Render phrases
+        renderPhrases();
+        
+        document.getElementById('info').textContent = 
+          `K01 P${prasna} A${anuvaka} PS${panchasat} - ${currentData.total_phrases} phrases`;
+        document.getElementById('status').style.display = 'block';
+        
+      } catch (error) {
+        document.getElementById('phrases').innerHTML = 
+          `<div class="error">Error: ${error.message}<br><br>Make sure you're running a local server (e.g., python3 -m http.server)</div>`;
+        document.getElementById('info').textContent = 'Error loading data';
+      }
+    }
+    
+    // Render phrase elements
+    function renderPhrases() {
+      const container = document.getElementById('phrases');
+      container.innerHTML = '';
+      
+      currentData.phrases.forEach((phrase, index) => {
+        const div = document.createElement('div');
+        div.className = 'phrase';
+        div.dataset.index = index;
+        div.innerHTML = `
+          <div class="phrase-text">${phrase.text}</div>
+          <div class="phrase-time">${formatTime(phrase.start)} - ${formatTime(phrase.end)} (${(phrase.end - phrase.start).toFixed(2)}s)</div>
+        `;
+        div.addEventListener('click', () => {
+          const targetTime = phrase.start;
+          console.log('Seeking to:', targetTime);
+          
+          // Simple approach - just set time and play
+          audioElement.currentTime = targetTime;
+          
+          // Use setTimeout to allow the seek to complete
+          setTimeout(() => {
+            console.log('After seek, currentTime:', audioElement.currentTime);
+            audioElement.play();
+          }, 100);
+        });
+        container.appendChild(div);
+      });
+    }
+    
+    // Update highlighting based on current time
+    function updateHighlight() {
+      if (!currentData) return;
+      
+      const currentTime = audioElement.currentTime;
+      const phrases = document.querySelectorAll('.phrase');
+      
+      phrases.forEach((el, index) => {
+        const phrase = currentData.phrases[index];
+        el.classList.remove('active', 'playing');
+        
+        if (currentTime >= phrase.start && currentTime < phrase.end) {
+          el.classList.add('playing');
+          // Scroll into view if needed
+          el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else if (currentTime >= phrase.start - 0.5 && currentTime < phrase.start) {
+          el.classList.add('active');
+        }
+      });
+      
+      document.getElementById('currentTime').textContent = formatTime(currentTime);
+      document.getElementById('duration').textContent = formatTime(audioElement.duration || 0);
+    }
+    
+    // Event listeners
+    document.getElementById('prasna').addEventListener('change', () => {
+      populateAnuvakas();
+      populatePanchasats();
+    });
+    
+    document.getElementById('anuvaka').addEventListener('change', populatePanchasats);
+    
+    document.getElementById('loadBtn').addEventListener('click', loadData);
+    
+    audioElement.addEventListener('timeupdate', updateHighlight);
+    
+    // Initialize
+    populateAnuvakas();
+    populatePanchasats();
+  </script>
+</body>
+</html>
